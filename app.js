@@ -44,7 +44,7 @@ const playGame =(userChoice) =>{
     console.log("comp choice=",compChoice);
     //to print result statement
     if(userChoice === compChoice){
-        console.log("ita draw!");
+        console.log("its a draw!");
         msg.innerText = "It's a tie! play again."
     }
     else{
@@ -75,6 +75,8 @@ choices.forEach((choice) =>
 
 const resetGame = () => {
     // Reset the scores
+    userScore = 0;
+  compScore = 0;
     document.getElementById('user-score').innerText = ` ${0}`;
   document.getElementById('comp-score').innerText = ` ${0}`;
   
@@ -82,15 +84,13 @@ const resetGame = () => {
    msg.innerText = "Let's :) Play again!"
   
     // Reset the cells
-    cells.forEach(cell => cell.classList.remove('x', 'o'));
+    cells.forEach(cell => cell.classList.remove('x', '0'));
   
     // Reset the current player
     currentPlayer = 'x';
+    document.getElementById('user-score').innerText = `${userScore}`;
+  document.getElementById('comp-score').innerText = `${compScore}`;
   };
   resetButton.addEventListener('click', resetGame);
-
-     
-
-
 
   
