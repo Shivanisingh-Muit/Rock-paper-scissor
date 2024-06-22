@@ -1,2 +1,3 @@
-# tik-tack-game
-Hello, This is Shivani singh from BCA cs this is my first pure js game site
+# Rock-paper-scissor game
+Highlighted javascript skills in this project of mine , enjoy playing it at your own great will.
+Thank you for visiting.
